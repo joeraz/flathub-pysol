@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Copyright 2022 Stephan Sokolow -->
-<!-- Copyright 2021-2024 Joe R. (@joeraz) -->
+<!-- Copyright 2021-2026 Joe R. (@joeraz) -->
 <!-- Copyright 2017-2021 Shlomi Fish -->
 <component type="desktop-application">
   <id>io.sourceforge.pysolfc.PySolFC</id>
@@ -77,12 +77,20 @@
     <control>keyboard</control>
   </supports>
   <releases>
+      <release version="3.6.1" date="2026-07-19">
+        <description>
+          <ul>
+            <li>Improved Python 3.14 support.</li>
+            <li>Many bugfixes.</li>
+          </ul>
+        </description>
+      </release>
       <release version="3.6.0" date="2026-06-13">
         <description>
           <ul>
             <li>20 new games.</li>
-			<li>Ability to add table tile backgrounds from your own images, through the app itself.</li>
-			<li>Bugfixes and enhancements.</li>
+            <li>Ability to add table tile backgrounds from your own images, through the app itself.</li>
+            <li>Bugfixes and enhancements.</li>
           </ul>
         </description>
       </release>
