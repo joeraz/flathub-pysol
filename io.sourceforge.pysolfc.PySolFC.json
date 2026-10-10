@@ -113,8 +113,11 @@
                     "commands": [
                         "# Workaround for 'flatpak run' not setting LD_LIBRARY_PATH=/app/lib",
                         "# and SDL_mixer needing that to find /app/lib/libmodplug.so*",
+                        "# Tcl/Tk 9 live in /app. Without these, Tk() exits looking for init.tcl.",
                         "",
                         "export LD_LIBRARY_PATH='/app/lib:$LD_LIBRARY_PATH'",
+                        "export TCL_LIBRARY=/app/lib/tcl9.0",
+                        "export TK_LIBRARY=/app/lib/tk9.0",
                         "pysol.py \"$@\""
                     ],
                     "dest-filename": "pysol"
